@@ -1,3 +1,4 @@
 <?php
-	echo phpinfo();
-	print("Hello World");
+	require 'src/Database.php';
+
+	$clothes = Database::select('clothes');
